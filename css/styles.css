@@ -1,19 +1,26 @@
-* {
+html,
+body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* ESTILOS PADRÃO */
 body {
-    box-sizing: border-box;
     background-color: #fbfbfb;
     display: flex;
     min-width: 320px;
     max-width: 586px;
     flex-direction: column;
     align-items: flex-start;
+    width: 100vw;
 }
 
 /* ESTILOS UNIVERSAIS */
@@ -36,8 +43,9 @@ a {
     font-size: 14px
 }
 
-    /*SEÇÕES COM AUTO LAYOUT*/
-.secao-topo, .secao-sobre{
+/*SEÇÕES COM AUTO LAYOUT*/
+.secao-topo,
+.secao-sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
