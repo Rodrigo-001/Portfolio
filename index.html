@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo C | Portfólio</title>
-    <link rel="shortcut icon" href="logotipo.ico" />    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="logotipo.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- TOPO -->
-    <header class="secao-topo" id="topo">
-        <a href="#topo">
+    <header class="secao-topo">
+        <a class="logotipo" href="#topo">
             <img src="icons/logotipo-portfolio.png" alt="logotipo dev rodrigo" width="91px">
         </a>
         <nav class="menu-navegacao">
@@ -31,19 +36,21 @@
     </header>
     <main>
         <!-- BANNER -->
-        <section class="secao-banner">
-            <div class="secao-resumo">
-                <h1>RODRIGO CAMARGO</h1>
-                <div class="subtitulo">
-                    <img src="icons/ICONE LINHA VERTICAL.png" alt="linha vertical">
-                    <p>Dev Front End</p>
+        <section class="secao-banner" id="topo">
+            <div class="capa-escura">
+                <div class="secao-resumo">
+                    <h1>RODRIGO CAMARGO</h1>
+                    <div class="subtitulo">
+                        <img src="icons/ICONE LINHA VERTICAL.png" alt="linha vertical">
+                        <p>Dev Front End</p>
+                    </div>
+                    <p id="paragrafo-resumo">Estudante de programação apaixonado por tecnologia, sempre em busca de conhecimento e inspirado em
+                        motivar pessoas.
+                    </p>
+                    <a href="#contato">
+                        <p>CONTATE-ME</p>
+                    </a>
                 </div>
-                <p>Estudante de programação apaixonado por tecnologia, sempre em busca de conhecimento e inspirado em
-                    motivar pessoas.
-                </p>
-                <a href="#contato">
-                    <p>CONTATE-ME</p>
-                </a>
             </div>
         </section>
         <!-- SOBRE MIM -->
@@ -211,7 +218,7 @@
                         </div>
                     </a>
                 </div>
-                
+
             </div>
 
             <h3>JAVA E PYTHON</h3>
@@ -264,7 +271,7 @@
             </a>
         </section>
         <!-- CONTATO -->
-        <section class="secao-contato">
+        <section class="secao-contato" id="contato">
             <div class="secao-subtitulo">
                 <h2>CONTATO</h2>
                 <p>Entre em contato comigo</p>
@@ -322,10 +329,13 @@
                 <img src="icons/ICONE GITHUB.png" alt="icone do GitHub" width="34.17px">
             </a>
         </div>
-        <img src="icons/logotipo-portfolio.png" alt="logotipo dev rodrigo" width="91px">
+        <a class="logotipo" href="#topo">
+            <img src="icons/logotipo-portfolio.png" alt="logotipo dev rodrigo" width="91px">
+        </a>
         <p class="fonte-menor">©Rodrigo Camargo. Todos os direitos reservados.</p>
 
 
     </footer>
 </body>
+
 </html>
