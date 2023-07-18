@@ -2,8 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -16,11 +16,11 @@ body {
 body {
     background-color: #fbfbfb;
     display: flex;
-    min-width: 320px;
+    min-width: 385px;
     max-width: 586px;
     flex-direction: column;
     align-items: flex-start;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 /* ESTILOS UNIVERSAIS */
