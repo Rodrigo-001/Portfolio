@@ -11,12 +11,13 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 /* ESTILOS PADRÃO */
 body {
     background-color: #fbfbfb;
     display: flex;
-    min-width: 385px;
+    min-width: 320px;
     max-width: 586px;
     flex-direction: column;
     align-items: flex-start;
