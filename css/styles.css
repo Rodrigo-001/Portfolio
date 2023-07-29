@@ -7,12 +7,14 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
+
 /* ESTILOS PADRÃO */
 body {
     background-color: #fbfbfb;
@@ -32,7 +34,9 @@ h1 {
 }
 
 h2 {
-    font-size: 20px
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px
 }
 
 h3 {
@@ -46,7 +50,10 @@ a {
 
 /*SEÇÕES COM DISPLAY FLEX*/
 .secao-topo,
-.secao-sobre, .menu-navegacao, .secao-banner, .capa-escura {
+.secao-sobre,
+.menu-navegacao,
+.secao-banner,
+.capa-escura {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +61,45 @@ a {
 
 }
 
+/* CORES DOS TEXTOS */
+header nav a,
+.texto-do-item>p:first-child, .secao-sobre p:nth-child(3) {
+    color: #292D32;
+}
 
+.secao-subtitulo p,
+.texto-do-item>p:nth-child(2),
+.texto-deslize p,
+.texto-do-contato p {
+    color: #4f4f4f
+}
+
+h2,
+h3, span {
+    color: #F2A900;
+}
+
+/* TEXTO CENTRALIZADO */
+
+.secao-sobre {
+    text-align: center;
+}
+/* LINKS COM FUNDO AMARELO E TEXTO BRANCO */
+.secao-resumo a, .link-curriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2A900;
+    text-decoration: none;
+    border-radius: 16px;
+}
+.secao-resumo a p, .link-curriculo {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167%;
+}
 /* TOPO */
 .secao-topo {
     flex-direction: column;
@@ -74,12 +119,11 @@ a {
     flex-shrink: 0;
 }
 
-.menu-navegacao {    
+.menu-navegacao {
     gap: 28px;
 }
 
 header nav a {
-    color: #292D32;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -96,7 +140,7 @@ header nav a:hover {
 
 /* BANNER */
 .secao-banner {
-    height: 622px;    
+    height: 622px;
     background: url(/img/IMG\ CAPA.jpg);
     background-size: cover;
     background-position: center;
@@ -107,7 +151,7 @@ header nav a:hover {
 .capa-escura {
     padding: 0px 42px;
     flex-direction: column;
-    
+
     flex: 1 0 0;
     background: rgba(0, 0, 0, 0.62);
 }
@@ -128,8 +172,7 @@ h1 {
     line-height: 167.5%;
     font-style: normal;
     font-weight: 700;
-    line-height: 167.5%;
-    /* 36.855px */
+
 }
 
 /* CONTINUAÇÃO BANNER */
@@ -152,25 +195,13 @@ h1 {
 
 /* link atalho para seção contato */
 .secao-resumo a {
-    display: flex;
     height: 28px;
-    padding: 11px 7px;
-    justify-content: center;
-    align-items: center;
+    padding: 11px 7px;    
     gap: 10px;
-    border-radius: 16px;
-    background: #F2A900;
-    text-decoration: none;
-
+    
+    
 }
 
-.secao-resumo a p {
-    color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 167.523%;
-}
 
 /* SEÇÃO SOBRE */
 .secao-sobre {
@@ -178,5 +209,17 @@ h1 {
     padding: 86px 42px;
     gap: 32px;
 }
-
-/* PAREI EM: CONTINUAR AGRUPANDO ESTILOS */
+.foto-perfil {
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.secao-sobre p:nth-child(3){    
+    line-height: 23px;
+}
+span{
+    font-weight: bold;
+}
+.link-curriculo{
+    padding: 8px;
+    gap: 10px;
+}
