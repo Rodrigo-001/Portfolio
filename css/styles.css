@@ -2,8 +2,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    /* width: 100vw;
-    height: 100vh; */
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -23,7 +21,6 @@ body {
     max-width: 586px;
     flex-direction: column;
     align-items: flex-start;
-    /* width: 100vw; */
 }
 
 /* ESTILOS UNIVERSAIS */
@@ -40,7 +37,9 @@ h2 {
 }
 
 h3 {
-    font-size: 18px
+    font-size: 18px;
+    line-height: 33px;
+
 }
 
 p,
@@ -53,7 +52,10 @@ a {
 .secao-sobre,
 .menu-navegacao,
 .secao-banner,
-.capa-escura {
+.capa-escura,
+.secao-habilidades,
+.secao-projetos,
+.texto-deslize {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +65,8 @@ a {
 
 /* CORES DOS TEXTOS */
 header nav a,
-.texto-do-item>p:first-child, .secao-sobre p:nth-child(3) {
+.texto-do-item>p:first-child,
+.secao-sobre p:nth-child(3) {
     color: #292D32;
 }
 
@@ -75,31 +78,51 @@ header nav a,
 }
 
 h2,
-h3, span {
+h3,
+span {
     color: #F2A900;
 }
 
 /* TEXTO CENTRALIZADO */
 
-.secao-sobre {
+.secao-sobre,
+.secao-habilidades,
+.secao-projetos {
     text-align: center;
 }
+
 /* LINKS COM FUNDO AMARELO E TEXTO BRANCO */
-.secao-resumo a, .link-curriculo {
+.secao-resumo a,
+.link-curriculo, .link-acompanhar {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #F2A900;
-    text-decoration: none;
     border-radius: 16px;
 }
-.secao-resumo a p, .link-curriculo {
+
+a {
+    text-decoration: none;
+}
+
+.secao-resumo a p,
+.link-curriculo, .link-acompanhar p {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 167%;
 }
+
+/* ESPAÇO INTERNO E DISTANCIA ENTRE ITENS */
+.secao-sobre,
+.secao-habilidades,
+.secao-projetos {
+    flex-direction: column;
+    padding: 86px 42px;
+    gap: 32px;
+}
+
 /* TOPO */
 .secao-topo {
     flex-direction: column;
@@ -128,7 +151,6 @@ header nav a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration: none;
     padding: 2px;
 }
 
@@ -196,30 +218,148 @@ h1 {
 /* link atalho para seção contato */
 .secao-resumo a {
     height: 28px;
-    padding: 11px 7px;    
+    padding: 11px 7px;
     gap: 10px;
-    
-    
-}
 
+
+}
 
 /* SEÇÃO SOBRE */
-.secao-sobre {
-    flex-direction: column;
-    padding: 86px 42px;
-    gap: 32px;
-}
+
 .foto-perfil {
     border-radius: 8px;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.secao-sobre p:nth-child(3){    
+
+.secao-sobre p:nth-child(3) {
     line-height: 23px;
 }
-span{
+
+span {
     font-weight: bold;
 }
-.link-curriculo{
+
+.link-curriculo {
     padding: 8px;
     gap: 10px;
 }
+
+/*SEÇÃO HABILIDADES */
+
+.secao-habilidades {
+    background: #FBFBFB;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* AGRUPA FLEXBOX*/
+.lista-hardskills,
+.lista-softskills,
+li,
+.texto-do-item {
+    display: flex;
+}
+.lista-hardskills,
+.lista-softskills {
+    width: 275px;
+    min-width: 275px;
+    padding: 22px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.lista-hardskills li,
+.lista-softskills li {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.texto-do-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* SEÇÃO PROJETOS */
+.secao-projetos {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    /* redefine o espaçamento interno de projetos, anteriormente tido como 86px */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.texto-deslize {
+    width: 191px;
+    height: 25px;
+    padding: 0px 8px;
+    align-self: center;
+    /*redefine o alinhamento aplicado no estilo agrupado*/
+    gap: 6px;
+}
+/*CARROSEL DE PROJETOS */
+    /*seções com flexbox*/
+.carrosel-de-projetos, .card-projeto,.titulo-card,.link-projeto,.paragrafo-card {
+    display: flex;
+}
+.carrosel-de-projetos {
+    height: 382px;
+    padding: 0px 12px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    overflow: scroll;
+}
+.card-projeto {
+    min-width: 298px;
+    height: 336px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #858585;
+}
+.agricultura {
+    background: #648A36;
+}
+.titulo-card {
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.16);
+    height: 62px;
+}
+.titulo-card p, .paragrafo-card p{
+    color: #fff;    
+}
+.titulo-card p {
+    text-align: center;
+    text-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    line-height: 20.046px;
+    letter-spacing: 0.7px;
+}
+.link-projeto {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.paragrafo-card img {   /*ÍCONE CLIQUE*/
+    width: 22px;
+}
+.paragrafo-card {
+    padding-bottom: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.link-acompanhar{
+    padding: 6px 8px;
+    gap: 8px;
+}
+
+/* PAREI EM: AGRUPAR ESTILOS DA SEÇÃO PROJETOS */
