@@ -55,7 +55,11 @@ a {
 .capa-escura,
 .secao-habilidades,
 .secao-projetos,
-.texto-deslize {
+.texto-deslize,
+.secao-contato,
+.secao-contato a,
+footer,
+.links-redes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +70,8 @@ a {
 /* CORES DOS TEXTOS */
 header nav a,
 .texto-do-item>p:first-child,
-.secao-sobre p:nth-child(3) {
+.secao-sobre p:nth-child(3),
+.menu-navegacao p {
     color: #292D32;
 }
 
@@ -83,17 +88,20 @@ span {
     color: #F2A900;
 }
 
-/* TEXTO CENTRALIZADO */
+/* SEÇÕES TEXTO CENTRALIZADO */
 
 .secao-sobre,
 .secao-habilidades,
-.secao-projetos {
+.secao-projetos,
+.secao-contato,
+footer {
     text-align: center;
 }
 
 /* LINKS COM FUNDO AMARELO E TEXTO BRANCO */
 .secao-resumo a,
-.link-curriculo, .link-acompanhar {
+.link-curriculo,
+.link-acompanhar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +114,8 @@ a {
 }
 
 .secao-resumo a p,
-.link-curriculo, .link-acompanhar p {
+.link-curriculo,
+.link-acompanhar p {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -117,7 +126,9 @@ a {
 /* ESPAÇO INTERNO E DISTANCIA ENTRE ITENS */
 .secao-sobre,
 .secao-habilidades,
-.secao-projetos {
+.secao-projetos,
+.secao-contato,
+footer {
     flex-direction: column;
     padding: 86px 42px;
     gap: 32px;
@@ -258,6 +269,7 @@ li,
 .texto-do-item {
     display: flex;
 }
+
 .lista-hardskills,
 .lista-softskills {
     width: 275px;
@@ -266,15 +278,16 @@ li,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     border-radius: 30px;
     background: #FFF;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .lista-hardskills li,
 .lista-softskills li {
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     align-self: stretch;
 }
@@ -287,11 +300,11 @@ li,
 
 /* SEÇÃO PROJETOS */
 .secao-projetos {
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
     /* redefine o espaçamento interno de projetos, anteriormente tido como 86px */
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .texto-deslize {
     width: 191px;
     height: 25px;
@@ -300,11 +313,17 @@ li,
     /*redefine o alinhamento aplicado no estilo agrupado*/
     gap: 6px;
 }
+
 /*CARROSEL DE PROJETOS */
-    /*seções com flexbox*/
-.carrosel-de-projetos, .card-projeto,.titulo-card,.link-projeto,.paragrafo-card {
+/*seções com flexbox*/
+.carrosel-de-projetos,
+.card-projeto,
+.titulo-card,
+.link-projeto,
+.paragrafo-card {
     display: flex;
 }
+
 .carrosel-de-projetos {
     height: 382px;
     padding: 0px 12px;
@@ -313,6 +332,7 @@ li,
     align-self: stretch;
     overflow: scroll;
 }
+
 .card-projeto {
     min-width: 298px;
     height: 336px;
@@ -322,9 +342,11 @@ li,
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #858585;
 }
+
 .agricultura {
     background: #648A36;
 }
+
 .titulo-card {
     padding: 0px 10px;
     justify-content: center;
@@ -334,32 +356,86 @@ li,
     background: rgba(255, 255, 255, 0.16);
     height: 62px;
 }
-.titulo-card p, .paragrafo-card p{
-    color: #fff;    
+
+.titulo-card p,
+.paragrafo-card p {
+    color: #fff;
 }
+
 .titulo-card p {
     text-align: center;
     text-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
     line-height: 20.046px;
     letter-spacing: 0.7px;
 }
+
 .link-projeto {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
-.paragrafo-card img {   /*ÍCONE CLIQUE*/
+
+.paragrafo-card img {
+    /*ÍCONE CLIQUE*/
     width: 22px;
 }
+
 .paragrafo-card {
     padding-bottom: 4px;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
-.link-acompanhar{
+
+.link-acompanhar {
     padding: 6px 8px;
     gap: 8px;
 }
 
-/* PAREI EM: AGRUPAR ESTILOS DA SEÇÃO PROJETOS */
+/* SEÇÃO CONTATO */
+.secao-contato {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.secao-contato a {
+    flex-direction: column;
+    height: 138.333px;
+    min-width: 208px;
+    padding: 22px 0px;
+    gap: 14px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ICONES DAS REDES SOCIAIS */
+.secao-contato a img,
+.secao-rodape img {
+    width: 34.17px;
+}
+
+/* SEÇÃO RODAPÉ */
+
+footer {
+    gap: 56px;
+}
+footer h2{
+    font-weight: bold;
+}
+
+.secao-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    align-self: stretch;
+}
+
+.links-redes {
+    gap: 32px;
+}
+
+.fonte-menor {    
+    font-size: 10px;
+}
