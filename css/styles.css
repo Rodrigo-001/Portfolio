@@ -68,10 +68,10 @@ footer,
 }
 
 /* CORES DOS TEXTOS */
-header nav a,
+nav a,
 .texto-do-item>p:first-child,
 .secao-sobre p:nth-child(3),
-.menu-navegacao p {
+.apresentacao p {
     color: #292D32;
 }
 
@@ -242,7 +242,7 @@ h1 {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.secao-sobre p:nth-child(3) {
+.apresentacao p {
     line-height: 23px;
 }
 
@@ -273,7 +273,7 @@ li,
 .lista-hardskills,
 .lista-softskills {
     width: 275px;
-    min-width: 275px;
+    /* min-width: 275px; */
     padding: 22px 28px;
     flex-direction: column;
     justify-content: center;
@@ -296,6 +296,12 @@ li,
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.secao-limitada {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* SEÇÃO PROJETOS */
@@ -335,6 +341,7 @@ li,
 
 .card-projeto {
     min-width: 298px;
+    max-width: 340px;
     height: 336px;
     flex-direction: column;
     justify-content: space-between;
@@ -419,7 +426,8 @@ li,
 footer {
     gap: 56px;
 }
-footer h2{
+
+footer h2 {
     font-weight: bold;
 }
 
@@ -436,6 +444,92 @@ footer h2{
     gap: 32px;
 }
 
-.fonte-menor {    
+.fonte-menor {
     font-size: 10px;
+}
+
+/* BREAKPOINTS */
+
+/* Estilos para dispositivos com largura entre 587 e 1280px */
+@media (min-width: 587px) and (max-width: 1280px) {
+    body {
+        min-width: 587px;
+        max-width: 1280px;
+    }
+
+    /* elementos do topo ficarão dispostos em linha */
+    .secao-topo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    /* elementos da seção apresentação ficarão dispostos horizontalmente */
+    .apresentacao {
+        display: flex;
+        max-width: 724px;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .secao-limitada {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: center;
+        gap: 18px;
+    }
+
+    .secao-habilidades {
+        padding: 86px 0;
+        gap: 62px;
+    }
+
+    .secao-limitada {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Estilos para dispositivos com largura maior que 1280px */
+@media (min-width: 1281px) {
+    body {
+        min-width: 1281px;
+        max-width: 100%;
+    }
+    /* elementos do topo dispostos em linha */
+    .secao-topo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    /* elementos da seção apresentação ficarão dispostos horizontalmente */
+    .apresentacao {
+        display: flex;
+        max-width: 724px;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .secao-habilidades {
+        padding: 86px 0;
+        gap: 62px;
+    }
+
+    .secao-limitada {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ESPAÇO INTERNO E DISTANCIA ENTRE ITENS */
+    .secao-sobre,
+    .secao-habilidades,
+    .secao-projetos,
+    .secao-contato,
+    footer {        
+        gap: 52px;
+    }
 }
