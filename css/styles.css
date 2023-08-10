@@ -170,7 +170,7 @@ header nav a:hover {
 /* BANNER */
 .secao-banner {
     height: 622px;
-    background: url(/img/IMG\ CAPA.jpg);
+    background-image: url("../img/IMGCAPA.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
