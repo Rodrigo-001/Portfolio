@@ -5,12 +5,14 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
+
 /* ESTILOS PADRÃO */
 body {
     background-color: #fbfbfb;
@@ -18,27 +20,31 @@ body {
     min-width: 320px;
     max-width: 586px;
     flex-direction: column;
-    align-items: flex-start;
 }
+
 /* ESTILOS UNIVERSAIS */
 
 /* TEXTOS */
 h1 {
     font-size: 22px;
 }
+
 h2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 33px
 }
+
 h3 {
     font-size: 18px;
     line-height: 33px;
 }
+
 p,
 a {
     font-size: 14px
 }
+
 /*SEÇÕES COM DISPLAY FLEX*/
 .secao-topo,
 .secao-sobre,
@@ -48,7 +54,8 @@ a {
 .secao-habilidades,
 .secao-projetos,
 .texto-deslize,
-.secao-contato,.links-contato,
+.secao-contato,
+.links-contato,
 .links-contato a,
 footer,
 .links-redes {
@@ -65,6 +72,7 @@ nav a,
 .apresentacao p {
     color: #292D32;
 }
+
 .secao-subtitulo p,
 .texto-do-item>p:nth-child(2),
 .texto-deslize p,
@@ -82,8 +90,8 @@ span {
 .secao-sobre,
 .secao-habilidades,
 .secao-projetos,
-.secao-contato,.links-contato
-footer {
+.secao-contato,
+.links-contato footer {
     text-align: center;
 }
 
@@ -97,9 +105,11 @@ footer {
     background: #F2A900;
     border-radius: 16px;
 }
+
 a {
     text-decoration: none;
 }
+
 .secao-resumo a p,
 .link-curriculo,
 .link-acompanhar p {
@@ -133,14 +143,17 @@ footer {
     right: 0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .logotipo {
     width: 91px;
     height: 25px;
     flex-shrink: 0;
 }
+
 .menu-navegacao {
     gap: 28px;
 }
+
 header nav a {
     text-align: center;
     font-style: normal;
@@ -148,6 +161,7 @@ header nav a {
     line-height: normal;
     padding: 2px;
 }
+
 header nav a:hover {
     background-color: #F2A900;
     border-radius: 6px;
@@ -162,6 +176,7 @@ header nav a:hover {
     width: 100%;
     color: #fff;
 }
+
 .capa-escura {
     padding: 0px 42px;
     flex-direction: column;
@@ -169,6 +184,7 @@ header nav a:hover {
     flex: 1 0 0;
     background: rgba(0, 0, 0, 0.62);
 }
+
 .secao-resumo {
     display: flex;
     flex-direction: column;
@@ -194,10 +210,12 @@ h1 {
     align-self: stretch;
     gap: 14px;
 }
+
 .subtitulo img {
     width: 58px;
     height: 18px;
 }
+
 #paragrafo-resumo {
     font-weight: 400;
     line-height: 167%;
@@ -216,13 +234,16 @@ h1 {
     border-radius: 8px;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .apresentacao p {
     line-height: 23px;
     padding-top: 22px;
 }
+
 span {
     font-weight: bold;
 }
+
 .link-curriculo {
     padding: 8px;
     gap: 10px;
@@ -242,6 +263,7 @@ li,
 .texto-do-item {
     display: flex;
 }
+
 .lista-hardskills,
 .lista-softskills {
     width: 275px;
@@ -255,6 +277,7 @@ li,
     background: #FFF;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .lista-hardskills li,
 .lista-softskills li {
     justify-content: flex-start;
@@ -262,11 +285,13 @@ li,
     gap: 8px;
     align-self: stretch;
 }
+
 .texto-do-item {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+
 .secao-limitada {
     gap: 32px;
     display: flex;
@@ -279,6 +304,7 @@ li,
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .texto-deslize {
     width: 191px;
     height: 25px;
@@ -297,6 +323,7 @@ li,
 .paragrafo-card {
     display: flex;
 }
+
 .carrosel-de-projetos {
     height: 382px;
     padding: 0px 12px;
@@ -305,6 +332,7 @@ li,
     align-self: stretch;
     overflow: scroll;
 }
+
 .card-projeto {
     min-width: 298px;
     max-width: 340px;
@@ -315,13 +343,16 @@ li,
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #858585;
 }
+
 .card-projeto:hover {
     height: 334px;
     box-shadow: 1px 4px 10px;
 }
+
 .agricultura {
     background: #648A36;
 }
+
 .titulo-card {
     padding: 0px 10px;
     justify-content: center;
@@ -331,31 +362,37 @@ li,
     background: rgba(255, 255, 255, 0.16);
     height: 62px;
 }
+
 .titulo-card p,
 .paragrafo-card p {
     color: #fff;
 }
+
 .titulo-card p {
     text-align: center;
     text-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
     line-height: 20.046px;
     letter-spacing: 0.7px;
 }
+
 .link-projeto {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .paragrafo-card img {
     /*ÍCONE CLIQUE*/
     width: 22px;
 }
+
 .paragrafo-card {
     padding-bottom: 4px;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
+
 .link-acompanhar {
     padding: 6px 8px;
     gap: 8px;
@@ -365,11 +402,13 @@ li,
 .secao-contato {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.links-contato{
+
+.links-contato {
     flex-wrap: wrap;
     gap: 22px;
     padding: 32px 0;
 }
+
 .links-contato a {
     flex-direction: column;
     height: 138.333px;
@@ -392,9 +431,11 @@ li,
 footer {
     gap: 56px;
 }
+
 footer h2 {
     font-weight: bold;
 }
+
 .secao-rodape {
     display: flex;
     flex-direction: column;
@@ -403,9 +444,11 @@ footer h2 {
     gap: 22px;
     align-self: stretch;
 }
+
 .links-redes {
     gap: 32px;
 }
+
 .fonte-menor {
     font-size: 10px;
 }
@@ -418,6 +461,7 @@ footer h2 {
         min-width: 587px;
         max-width: 1280px;
     }
+
     /* sobrescreve o espaçamento do paragrafo para a imagem de perfil */
     .apresentacao p {
         padding-top: 0px;
@@ -464,12 +508,14 @@ footer h2 {
         min-width: 1281px;
         max-width: 100%;
     }
+
     /* elementos do topo dispostos em linha */
     .secao-topo {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 12px;
-    }
+    }    
+
     /* elementos da seção apresentação ficarão dispostos horizontalmente */
     .apresentacao {
         display: flex;
@@ -478,20 +524,30 @@ footer h2 {
         align-items: center;
         gap: 32px;
     }
+
     .secao-habilidades {
         padding: 86px 0;
         gap: 62px;
     }
+
     /* listas de skills ficarão dispostas horizontalmente */
     .secao-limitada {
         display: flex;
         flex-direction: row;
     }
+
     /* ESPAÇO INTERNO E DISTANCIA ENTRE ITENS */
     .secao-sobre,
     .secao-habilidades,
     .secao-projetos,
-    .secao-contato,.links-contato,footer {        
+    .secao-contato,
+    .links-contato,
+    footer {
         gap: 52px;
+    }
+    /* ALTERA O ALINHAMENTO PARA CENTER EM TELAS GRANDES */
+    .carrosel-de-projetos {
+        align-self: center;
+
     }
 }
