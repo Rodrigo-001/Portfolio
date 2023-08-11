@@ -130,6 +130,18 @@ footer {
     padding: 86px 42px;
     gap: 32px;
 }
+/* LINKS COM EFEITO HOVER */
+.link-curriculo:hover,.link-acompanhar:hover {
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer .menu-navegacao a:hover {    
+    text-decoration: underline;
+}
+
+.secao-resumo a:hover {    
+    text-decoration: underline white;    
+}
 
 /* TOPO */
 .secao-topo {
@@ -346,7 +358,10 @@ li,
 
 .card-projeto:hover {
     height: 334px;
-    box-shadow: 1px 4px 10px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.714);
+}
+.links-contato a:hover {
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .agricultura {
