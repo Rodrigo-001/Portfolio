@@ -342,7 +342,7 @@ li,
     align-items: center;
     gap: 12px;
     align-self: stretch;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .card-projeto {
@@ -364,8 +364,17 @@ li,
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* COR DE FUNDO DOS CARDS */
 .agricultura {
-    background: #648A36;
+    background: #648a36db;
+}
+
+.senhor-lei{
+    background-color: #735716cd;
+}
+
+.paraty{
+    background-color: #648a36db;
 }
 
 .titulo-card {
