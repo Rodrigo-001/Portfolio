@@ -1,4 +1,10 @@
-
+/*Melhorias para o portfólio
+Adicionar eventlistener nos botões - on enter;
+Adicionar eventlistener nos projetos - on enter;
+Adicionar botão para voltar ao topo e ao rodape;
+Adicionar botão para idioma - pt-br e en-us;
+Adicionar novas seções de projetos: Java Script.
+Adicionar botão para modo escuro e claro;*/
 function aocarregar() {
     // Selecionando elementos para adicionar eventlistener
     let linkTopo = document.getElementById("linkTopo")
