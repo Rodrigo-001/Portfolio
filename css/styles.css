@@ -174,10 +174,10 @@ header nav a {
     padding: 2px;
 }
 
-header nav a:hover {
+/* header nav a:hover {
     background-color: #F2A900;
     border-radius: 6px;
-}
+} */
 
 /* BANNER */
 .secao-banner {
