@@ -345,11 +345,6 @@ li,
     background-color: #858585;
 }
 
-.card-projeto:hover {
-    /* height: 334px; */
-    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.714);
-    transform: scale(1.01);
-}
 .links-contato a:hover {    
     transform: scale(1.05);    
 }

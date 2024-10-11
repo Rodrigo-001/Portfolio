@@ -23,7 +23,9 @@ function aocarregar() {
         document.getElementsByClassName("linkNavegacaoRodape")[1],
         document.getElementsByClassName("linkNavegacaoRodape")[2],
         document.getElementById("botaoContateMe"),
-
+        document.getElementsByClassName("card-projeto")[0],
+        document.getElementsByClassName("card-projeto")[1],
+        document.getElementsByClassName("card-projeto")[2]  
     ];
  
     linksComEfeitoGrow.forEach(link => {        
@@ -44,20 +46,30 @@ function entrou(elemento) {
     let idElemento = (elemento.id);
     let classeDoElemento = elemento.className;   
 
-    //EFEITO PARA LINKS DE NAVEGAÇÃO DO TOPO
+    // Links de navegação do topo
     if (idElemento == "linkTopo" || idElemento == "linkSobre" || idElemento == "linkProjetos" || idElemento == "linkContatos") {        
         elemento.style.backgroundColor = '#F2A900';
         elemento.style.borderRadius = '18px';
         elemento.style.padding = '6px';
-        elemento.style.color = '#FFF';
-    } else if(classeDoElemento == "link-curriculo" || classeDoElemento == "link-acompanhar") {     
-        elemento.style.transform = 'scale(1.05)';
-    }else if(classeDoElemento == "linkNavegacaoRodape") {
-        elemento.style.textDecoration = "underline";
-    }else if (idElemento == "botaoContateMe") {        
+        elemento.style.color = '#FFF';    
+    } 
+    // Link para curriculo
+    else if(classeDoElemento == "link-curriculo" || classeDoElemento == "link-acompanhar") {     
         elemento.style.transform = 'scale(1.05)';
     }
-    
+    // Links de navegação do rodapé
+    else if(classeDoElemento == "linkNavegacaoRodape") {
+        elemento.style.textDecoration = "underline";
+    }
+    // Botão Contate-me
+    else if (idElemento == "botaoContateMe") {        
+        elemento.style.transform = 'scale(1.05)';
+    }
+    // Cards de projetos
+    else if (elemento.classList.contains("card-projeto")) {                
+        elemento.style.transform = 'scale(1.01)';
+        elemento.style.boxShadow = "1px 4px 10px rgba(0, 0, 0, 0.714)";
+    }    
 }
 
 // Função restaurar os estilos originais do elemento
