@@ -25,7 +25,11 @@ function aocarregar() {
         document.getElementById("botaoContateMe"),
         document.getElementsByClassName("card-projeto")[0],
         document.getElementsByClassName("card-projeto")[1],
-        document.getElementsByClassName("card-projeto")[2]  
+        document.getElementsByClassName("card-projeto")[2],
+        document.getElementsByClassName("linkContato")[0],
+        document.getElementsByClassName("linkContato")[1],
+        document.getElementsByClassName("linkContato")[2],
+        document.getElementsByClassName("linkContato")[3],
     ];
  
     linksComEfeitoGrow.forEach(link => {        
@@ -69,7 +73,11 @@ function entrou(elemento) {
     else if (elemento.classList.contains("card-projeto")) {                
         elemento.style.transform = 'scale(1.01)';
         elemento.style.boxShadow = "1px 4px 10px rgba(0, 0, 0, 0.714)";
-    }    
+    }
+    // Links para contato
+    else if (classeDoElemento == "linkContato") {
+        elemento.style.transform = 'scale(1.05)';
+    }
 }
 
 // Função restaurar os estilos originais do elemento
