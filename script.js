@@ -22,6 +22,8 @@ function aocarregar() {
         document.getElementsByClassName("linkNavegacaoRodape")[0],
         document.getElementsByClassName("linkNavegacaoRodape")[1],
         document.getElementsByClassName("linkNavegacaoRodape")[2],
+        document.getElementById("botaoContateMe"),
+
     ];
  
     linksComEfeitoGrow.forEach(link => {        
@@ -52,6 +54,8 @@ function entrou(elemento) {
         elemento.style.transform = 'scale(1.05)';
     }else if(classeDoElemento == "linkNavegacaoRodape") {
         elemento.style.textDecoration = "underline";
+    }else if (idElemento == "botaoContateMe") {        
+        elemento.style.transform = 'scale(1.05)';
     }
     
 }

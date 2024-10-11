@@ -131,11 +131,6 @@ footer {
     gap: 32px;
 }
 
-.secao-resumo a:hover {    
-    /* text-decoration: underline white;     */
-    transform: scale(1.05);
-}
-
 /* TOPO */
 .secao-topo {
     flex-direction: column;
