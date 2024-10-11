@@ -131,10 +131,6 @@ footer {
     gap: 32px;
 }
 
-footer .menu-navegacao a:hover {    
-    text-decoration: underline;
-}
-
 .secao-resumo a:hover {    
     /* text-decoration: underline white;     */
     transform: scale(1.05);
