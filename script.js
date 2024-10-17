@@ -1,37 +1,45 @@
 let estilosOriginais = {}
 
 function aocarregar() {
-    // Selecionando elementos para adicionar eventlistener
+    // eventListeners dos links de navegação do cabeçalho
     const linksTopo = [
         document.getElementById("linkTopo"),
         document.getElementById("linkSobre"),
         document.getElementById("linkProjetos"),
         document.getElementById("linkContatos"),        
-    ];
-
-    // Adicionando eventListeners nos links de navegação do cabeçalho
+    ];    
     linksTopo.forEach(link => {
         link.addEventListener("mouseenter", () => entrou(link));
         link.addEventListener("mouseleave", () => saiu(link));
     });   
 
-    // Selecionando elementos para adicionar eventlistener
+    // eventListeners dos cards de projetos
+    const cards = document.querySelectorAll(".card-projeto");    
+    cards.forEach(card => {        
+        card.addEventListener("mouseenter", () => entrou(card));
+        card.addEventListener("mouseleave", () => saiu(card));
+    });
+
+    // eventListeners dos links de contato
+    const linksContato = document.querySelectorAll(".linkContato");
+    linksContato.forEach(contato => {
+        contato.addEventListener("mouseenter", ()=> entrou(contato));
+        contato.addEventListener("mouseleave", ()=> saiu(contato))
+    });
+
+    // eventListeners dos links de navegação do rodapé    
+    const linksNavRodape = document.querySelectorAll(".linkNavegacaoRodape");
+    linksNavRodape.forEach(link => {
+        link.addEventListener("mouseenter", ()=> entrou(link)),
+        link.addEventListener("mouseleave", ()=> saiu(link))
+    });
+   
+    // eventListeners dos demais links
     const linksComEfeitoGrow = [
         document.getElementsByClassName("link-curriculo")[0],
         document.getElementsByClassName("link-acompanhar")[0],       
-        document.getElementsByClassName("linkNavegacaoRodape")[0],
-        document.getElementsByClassName("linkNavegacaoRodape")[1],
-        document.getElementsByClassName("linkNavegacaoRodape")[2],
-        document.getElementById("botaoContateMe"),
-        document.getElementsByClassName("card-projeto")[0],
-        document.getElementsByClassName("card-projeto")[1],
-        document.getElementsByClassName("card-projeto")[2],
-        document.getElementsByClassName("linkContato")[0],
-        document.getElementsByClassName("linkContato")[1],
-        document.getElementsByClassName("linkContato")[2],
-        document.getElementsByClassName("linkContato")[3],
-    ];
- 
+        document.getElementById("botaoContateMe")
+    ]; 
     linksComEfeitoGrow.forEach(link => {        
         link.addEventListener("mouseenter", () => entrou(link));
         link.addEventListener("mouseleave", () => saiu(link));
