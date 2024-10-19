@@ -338,22 +338,20 @@ li,
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #858585;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);   
+    border-radius: 18px;
 }
 
 /* COR DE FUNDO DOS CARDS */
-.agricultura {
-    background: #648a36db;
+
+.card-projeto:nth-child(odd){
+    background:#61697C;    
+}
+.card-projeto:nth-child(even){
+    background: #98805D;    
 }
 
-.senhor-lei{
-    background-color: #735716cd;
-}
-
-.paraty{
-    background-color: #648a36db;
-}
+/* #d4c098  #ffcd37 #e7c049 #E4D0B4 #D1BC9F #98805D*/
 
 .titulo-card {
     padding: 0px 10px;
@@ -361,8 +359,9 @@ li,
     align-items: center;
     flex-shrink: 0;
     align-self: stretch;
-    background: rgba(255, 255, 255, 0.16);
-    height: 62px;
+    background: rgba(64, 64, 64, 0.298);
+    height: 80px;
+    border-radius: 18px 18px 0 0;
 }
 
 .titulo-card p,
