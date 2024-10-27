@@ -15,7 +15,7 @@ body {
 
 /* ESTILOS PADRÃO */
 body {
-    background-color: #fbfbfb;
+    background-color: #1E1E1E;
     display: flex;
     min-width: 320px;
     max-width: 586px;
@@ -70,14 +70,14 @@ nav a,
 .texto-do-item>p:first-child,
 .secao-sobre p:nth-child(3),
 .apresentacao p {
-    color: #292D32;
+    color: #fff;
 }
 
 .secao-subtitulo p,
 .texto-do-item>p:nth-child(2),
 .texto-deslize p,
 .texto-do-contato p {
-    color: #4f4f4f
+    color: #fff;
 }
 
 h2,
@@ -136,13 +136,14 @@ footer {
     flex-direction: column;
     height: 88px;
     gap: 12px;
-    background-color: #fbfbfb;
+    background-color: #333333;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 999;
+    border-bottom: 2px #f2a900 solid;
 }
 
 .logotipo {
@@ -250,7 +251,7 @@ span {
 /*SEÇÃO HABILIDADES */
 
 .secao-habilidades {
-    background: #FBFBFB;
+    background: #1E1E1E;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -272,7 +273,7 @@ li,
     align-items: center;
     gap: 16px;
     border-radius: 30px;
-    background: #FFF;
+    background: #333333;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -345,7 +346,7 @@ li,
 /* COR DE FUNDO DOS CARDS */
 
 .card-projeto:nth-child(odd){
-    background:#61697C;    
+    background:#333333;    
 }
 .card-projeto:nth-child(even){
     background: #98805D;    
@@ -417,7 +418,7 @@ li,
     padding: 22px 0;
     gap: 14px;
     border-radius: 30px;
-    background: #FFF;
+    background:#333333;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -452,6 +453,7 @@ footer h2 {
 
 .fonte-menor {
     font-size: 10px;
+    color: #fff;
 }
 
 /* BREAKPOINTS */
