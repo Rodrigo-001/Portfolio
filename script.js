@@ -70,7 +70,7 @@ function entrou(elemento) {
         elemento.style.transform = 'scale(1.05)';
     }
     // Links de navegação do rodapé
-    else if(classeDoElemento == "linkNavegacaoRodape") {
+    else if (classeDoElemento.includes("linkNavegacaoRodape")) {
         elemento.style.textDecoration = "underline";
     }
     // Botão Contate-me
@@ -83,7 +83,7 @@ function entrou(elemento) {
         elemento.style.boxShadow = "1px 4px 10px rgba(0, 0, 0, 0.714)";
     }
     // Links para contato
-    else if (classeDoElemento == "linkContato") {
+    else if (classeDoElemento.includes("linkContato")) {
         elemento.style.transform = 'scale(1.05)';
     }
 }
@@ -97,3 +97,30 @@ function saiu(elemento) {
     elemento.style.transform = estilosOriginais.transform;
     elemento.style.textDecoration = estilosOriginais.textDecoration;
 }
+
+
+
+// Função para mudar tema
+function mudartema () {
+    let mudarTema = document.querySelectorAll('.temaElemento, .linkContato, .logotipo img');    
+    mudarTema.forEach(elemento => {
+        elemento.classList.toggle('active');
+    });
+
+    const textos = document.querySelectorAll(`
+        nav a, 
+        .texto-do-item > p:first-child,
+        .secao-sobre p:nth-child(3),
+        .apresentacao p,
+        .secao-subtitulo p,
+        .texto-do-item > p:nth-child(2),
+        .texto-deslize p,
+        .texto-do-contato p,
+        .fonte-menor
+    `);
+
+    textos.forEach(elemento => {
+        elemento.classList.toggle('active');
+    });
+}
+

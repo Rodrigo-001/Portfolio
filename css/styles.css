@@ -15,7 +15,7 @@ body {
 
 /* ESTILOS PADRÃO */
 body {
-    background-color: #fbfbfb;
+    background-color: #1E1E1E;
     display: flex;
     min-width: 320px;
     max-width: 586px;
@@ -70,14 +70,14 @@ nav a,
 .texto-do-item>p:first-child,
 .secao-sobre p:nth-child(3),
 .apresentacao p {
-    color: #292D32;
+    color: #fff;
 }
 
 .secao-subtitulo p,
 .texto-do-item>p:nth-child(2),
 .texto-deslize p,
 .texto-do-contato p {
-    color: #4f4f4f
+    color: #fff;
 }
 
 h2,
@@ -136,13 +136,14 @@ footer {
     flex-direction: column;
     height: 88px;
     gap: 12px;
-    background-color: #fbfbfb;
+    background-color: #333333;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 999;
+    border-bottom: 2px #f2a900 solid;
 }
 
 .logotipo {
@@ -250,7 +251,7 @@ span {
 /*SEÇÃO HABILIDADES */
 
 .secao-habilidades {
-    background: #FBFBFB;
+    background: #1E1E1E;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -272,7 +273,7 @@ li,
     align-items: center;
     gap: 16px;
     border-radius: 30px;
-    background: #FFF;
+    background: #333333;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -345,7 +346,7 @@ li,
 /* COR DE FUNDO DOS CARDS */
 
 .card-projeto:nth-child(odd){
-    background:#61697C;    
+    background:#333333;    
 }
 .card-projeto:nth-child(even){
     background: #98805D;    
@@ -417,7 +418,7 @@ li,
     padding: 22px 0;
     gap: 14px;
     border-radius: 30px;
-    background: #FFF;
+    background:#333333;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -452,7 +453,84 @@ footer h2 {
 
 .fonte-menor {
     font-size: 10px;
+    color: #fff;
 }
+
+/* Botão mudar tema */
+body, .lista-hardskills, .lista-softskills, .secao-topo, .secao-habilidades {
+    transition: 0.5s ease;
+}
+.container-mudar-tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+.btn-mudar-tema {
+    width: 60px;
+    height: 28px;
+    border: 2px solid #fbfbfb;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+.btn-mudar-tema:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fbfbfb;
+    border-radius: 50%;
+    top: 50%;
+    left:4px;
+    transform: translateY(-50%);
+    transition: left 0.5s;
+}
+.btn-mudar-tema.active:before{
+    left: 32px;
+    background:#1E1E1E;
+    
+}
+
+.btn-mudar-tema.active {
+    border: 2px solid #1E1E1E;
+}
+body.active,
+.lista-hardskills.active,
+.lista-softskills.active,
+.secao-topo.active,
+.linkContato.active
+{
+    background: #f9f9f9;    
+}
+.secao-habilidades.active {
+    background: #f9f9f9;        
+}
+p.active{
+    color: #292D32;
+}
+a.active{
+    color: #292D32;
+}
+
+li.active{
+    color: #292D32;
+}
+.texto-do-item p.active{
+    color: #292D32;
+}
+.texto-do-item p:nth-child(2).active{
+    color: #4f4f4f;
+}
+
+.container-mudar-tema{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
 
 /* BREAKPOINTS */
 
@@ -501,6 +579,14 @@ footer h2 {
         display: flex;
         flex-direction: row;
     }
+
+    .container-mudar-tema {
+        position: static;   /* Reseta o position para o valor padrão */
+        top: auto;          /* Remove o top */
+        right: auto;        /* Remove o right */
+        z-index: auto;      /* Remove o z-index */
+    }
+
 }
 
 /* Estilos para dispositivos com largura maior que 1280px */
@@ -550,5 +636,11 @@ footer h2 {
     .carrosel-de-projetos {
         align-self: center;
 
+    }
+    .container-mudar-tema {
+        position: static;   /* Reseta o position para o valor padrão */
+        top: auto;          /* Remove o top */
+        right: auto;        /* Remove o right */
+        z-index: auto;      /* Remove o z-index */
     }
 }
