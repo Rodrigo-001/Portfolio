@@ -456,6 +456,82 @@ footer h2 {
     color: #fff;
 }
 
+/* Botão mudar tema */
+body, .lista-hardskills, .lista-softskills, .secao-topo, .secao-habilidades {
+    transition: 0.5s ease;
+}
+.container-mudar-tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+.btn-mudar-tema {
+    width: 60px;
+    height: 28px;
+    border: 2px solid #fbfbfb;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+.btn-mudar-tema:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fbfbfb;
+    border-radius: 50%;
+    top: 50%;
+    left:4px;
+    transform: translateY(-50%);
+    transition: left 0.5s;
+}
+.btn-mudar-tema.active:before{
+    left: 32px;
+    background:#1E1E1E;
+    
+}
+
+.btn-mudar-tema.active {
+    border: 2px solid #1E1E1E;
+}
+body.active,
+.lista-hardskills.active,
+.lista-softskills.active,
+.secao-topo.active,
+.linkContato.active
+{
+    background: #f9f9f9;    
+}
+.secao-habilidades.active {
+    background: #f9f9f9;        
+}
+p.active{
+    color: #292D32;
+}
+a.active{
+    color: #292D32;
+}
+
+li.active{
+    color: #292D32;
+}
+.texto-do-item p.active{
+    color: #292D32;
+}
+.texto-do-item p:nth-child(2).active{
+    color: #4f4f4f;
+}
+
+.container-mudar-tema{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+
 /* BREAKPOINTS */
 
 /* Estilos para dispositivos com largura entre 587 e 1280px */
@@ -503,6 +579,14 @@ footer h2 {
         display: flex;
         flex-direction: row;
     }
+
+    .container-mudar-tema {
+        position: static;   /* Reseta o position para o valor padrão */
+        top: auto;          /* Remove o top */
+        right: auto;        /* Remove o right */
+        z-index: auto;      /* Remove o z-index */
+    }
+
 }
 
 /* Estilos para dispositivos com largura maior que 1280px */
@@ -552,5 +636,11 @@ footer h2 {
     .carrosel-de-projetos {
         align-self: center;
 
+    }
+    .container-mudar-tema {
+        position: static;   /* Reseta o position para o valor padrão */
+        top: auto;          /* Remove o top */
+        right: auto;        /* Remove o right */
+        z-index: auto;      /* Remove o z-index */
     }
 }
